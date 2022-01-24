@@ -24,9 +24,12 @@ Authentication and Authorization without .NET Core Identity (if you login, you c
 
 <br/>
 <br/>
-Role=Admin | admin_example_mail@gmail.com | 123456
---- | --- | ---                  
-Role=User | user_example_mail@gmail.com | 1234567 |
+| UserName      | Password |
+| ----------- | ----------- |
+| admin_example_mail@gmail.com      | 123456       |
+| user_example_mail@gmail.com   | 1234567        |
+
+
 <br/>
 <br/>
 <img src="ReadMeImages/2.PNG">
