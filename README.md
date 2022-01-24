@@ -1,6 +1,3 @@
-| Attempt | #1  | #2  |
-| :-----: | :-: | :-: |
-| Seconds | 301 | 283 |
 
 # IdentityApp
 Authentication and Authorization without .NET Core Identity (if you login, you can see informations about your session  and cookie)
@@ -28,11 +25,11 @@ Authentication and Authorization without .NET Core Identity (if you login, you c
 
 <br/>
 <br/>
-| UserName                    | Password |
-|-----------------------------|----------|
-| admin_example_mail@gmail.com| 123456   |
-| user_example_mail@gmail.com | 1234567  |
 
+
+| UserName | #admin_example_mail@gmail.com  | #user_example_mail@gmail.com  |
+| :-----: | :-: | :-: |
+| Password |123456 | 1234567 |
 
 <br/>
 <br/>
