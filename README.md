@@ -1,21 +1,27 @@
 # IdentityApp
-Authentication and Authorization without .NET Core Identity
+Authentication and Authorization without .NET Core Identity (if you login, you can see information about your session  and cookie)
 <br/>
 <br/>
 ***I used Entity Framework and MSSQL***
 <br/>
 <br/>
 *This Project has **SeedData**.*
+<br/>
+<br/>
 *When the project runs, 2 users will be created automatically, one in admin role and the other in user.Before that, you should make the database connection in **appsettings.json** .*
 <br/>
 <br/>
-*You can register as user. If your role is Admin, you can assign role to other users.*
+*You can register as user.*
 <br/>
 <br/>
 <img src="ReadMeImages/1.PNG">
 <br/>
 <br/>
 *You can run the project and login with the above user information or you can register as a user (user role). You must use the above admin information to assign roles to users.*
+<br/>
+<br/>
+<img src="ReadMeImages/sql_seeddata.PNG">
+<br/>
 <br/>
 <img src="ReadMeImages/2.PNG">
 <br/>
@@ -27,6 +33,7 @@ Authentication and Authorization without .NET Core Identity
 <br/>
 <br/>
 *if you login as a Admin, you can role to user.(I have defined 2 roles for simplicity; Admin and User. Only users with **admin role** can assign roles to other users.)*
+<br/>
 <br/>
 *You can select users which registered in the database and roles (Admin,User)*
 <br/>
