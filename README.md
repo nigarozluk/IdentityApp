@@ -28,9 +28,6 @@ Role=Admin | admin_example_mail@gmail.com | 123456
 Role=User | user_example_mail@gmail.com | 1234567 
 <br/>
 <br/>
-<img src="ReadMeImages/sql_seeddata.PNG">
-<br/>
-<br/>
 <img src="ReadMeImages/2.PNG">
 <br/>
 <br/>
