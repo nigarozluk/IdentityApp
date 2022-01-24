@@ -23,8 +23,7 @@ Authentication and Authorization without .NET Core Identity (if you login, you c
 **The records in the password column hashed,for this reason you can not use them for login, You must use unhashed  state of password: They are;**
 <br/>
 <br/>
-UserName | admin_example_mail@gmail.com | ?
-?9I?Y??V?W??> 
+UserName | admin_example_mail@gmail.com | ? ?9I?Y??V?W??> 
 --- | --- | --- 
 Password | user_example_mail@gmail.com | ???t??{??B??7Y 
 <br/>
