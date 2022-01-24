@@ -17,7 +17,7 @@ Authentication and Authorization without .NET Core Identity (if you login, you c
 <img src="ReadMeImages/1.PNG">
 <br/>
 <br/>
-*You can run the project and login with the above user information or you can register as a user (user role). You must use the above admin information to assign roles to users.*
+*You can run the project and login with the following user information or you can register as a user (user role). You must use the above admin information to assign roles to users.*
 <br/>
 <br/>
 **The records in the password column hashed(in SeedData),for this reason you can not use them for login, ***You must use unhashed  state of password: They are;*****
