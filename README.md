@@ -40,7 +40,7 @@ Role=User | user_example_mail@gmail.com | 1234567
 *if you login as a Admin, you can role to user.(I have defined 2 roles for simplicity; Admin and User. Only users with **admin role** can assign roles to other users.)*
 <br/>
 <br/>
-*You can select users which registered in the database and roles (Admin,User)*
+**You can select users which registered in the database and roles (Admin,User)**
 <br/>
 <br/>
 <img src="ReadMeImages/4.PNG">
