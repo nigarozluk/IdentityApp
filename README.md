@@ -1,5 +1,5 @@
 # IdentityApp
-Authentication and Authorization without .NET Core Identity (if you login, you can see information about your session  and cookie)
+Authentication and Authorization without .NET Core Identity (if you login, you can see informations about your session  and cookie)
 <br/>
 <br/>
 ***I used Entity Framework and MSSQL***
