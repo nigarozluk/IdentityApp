@@ -21,25 +21,29 @@ Authentication and Authorization without .NET Core Identity (if you login, you c
 <br/>
 <br/>
 **The records in the password column hashed(in SeedData),for this reason you can not use them for login, ***You must use unhashed  state of password: They are;*****
+
 <br/>
 <br/>
 Role=Admin | admin_example_mail@gmail.com | 123456
 --- | --- | ---                  
-Role=User | user_example_mail@gmail.com | 1234567 
+Role=User | user_example_mail@gmail.com | 1234567 |
 <br/>
 <br/>
 <img src="ReadMeImages/2.PNG">
 <br/>
 <br/>
+
 **if you login, you can see information about your session  and cookie. When You logout, your session and cookie are cleared.**
 <br/>
 <br/>
 <img src="ReadMeImages/3.PNG">
 <br/>
 <br/>
+
 **if you login as a Admin, you can role to user.(I have defined 2 roles for simplicity; Admin and User. Only users with #admin role# can assign roles to other users.)**
 <br/>
 <br/>
+
 **You can select users which registered in the database and roles (Admin,User)**
 <br/>
 <br/>
