@@ -1,3 +1,7 @@
+| Attempt | #1  | #2  |
+| :-----: | :-: | :-: |
+| Seconds | 301 | 283 |
+
 # IdentityApp
 Authentication and Authorization without .NET Core Identity (if you login, you can see informations about your session  and cookie)
 <br/>
