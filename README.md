@@ -44,4 +44,3 @@ Role=User | user_example_mail@gmail.com | 1234567
 <br/>
 <br/>
 <img src="ReadMeImages/4.PNG">
-<br/>
