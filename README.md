@@ -31,13 +31,13 @@ Role=User | user_example_mail@gmail.com | 1234567
 <img src="ReadMeImages/2.PNG">
 <br/>
 <br/>
-*if you login, you can see information about your session  and cookie. When You logout, your session and cookie are cleared.*
+**if you login, you can see information about your session  and cookie. When You logout, your session and cookie are cleared.**
 <br/>
 <br/>
 <img src="ReadMeImages/3.PNG">
 <br/>
 <br/>
-*if you login as a Admin, you can role to user.(I have defined 2 roles for simplicity; Admin and User. Only users with **admin role** can assign roles to other users.)*
+**if you login as a Admin, you can role to user.(I have defined 2 roles for simplicity; Admin and User. Only users with #admin role# can assign roles to other users.)**
 <br/>
 <br/>
 **You can select users which registered in the database and roles (Admin,User)**
