@@ -1,0 +1,100 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/ModalForm.css" />
+<h1>Welcome To Admin Page</h1>
+<div>
+    <p> Admin Session : @TempData["MessageAdmin"]</p>
+    <p> Admin Cookie  : @ViewBag.CookieAdmin</p>
+</div>
+
+<button class="btn-info" onclick="document.getElementById('id03').style.display='block'" style="width:auto;"> Add Role To User</button>
+
+<button class="btn-danger" onclick="Logout()" style="width:auto;"> Logout </button>
+
+<div id="id03" class="modal">
+
+    <form id="addRole" class="modal-content animate" enctype="multipart/form-data">
+        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <select id="userList" style="width:100%" class="form-control">
+                <option selected value="">Select User</option>
+                @foreach (var user in ViewBag.UserList)
+                {
+                    <option value="@user.Id">
+                        @user.UserName
+                    </option>
+                }
+            </select>
+            <br />
+            <label for="role"><b>Role</b></label>
+            <select id="roleList" style="width:100%" class="form-control">
+                <option selected value="">Select Role</option>
+                @foreach (var role in Html.GetEnumSelectList<RoleType>())
+                {
+                    <option value="@role.Value">
+                        @role.Text
+                    </option>
+                }
+            </select>
+
+            <button type="button" onclick="AddRoleToUser()">Add Role</button>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+    </form>
+</div>
+<script>
+    function Logout() {
+        $.ajax({
+            url: "/Account/LogOut",
+            success: function (resp) {
+                if (!resp.hasError) {
+                    alert(resp.message);
+                     window.location.href = '@Url.Action("Login", "Account")';
+                } else {
+                    alert(resp.message);
+                }
+            },
+            error: () => {
+                console.log("Error");
+            }
+        });
+    }
+    function AddRoleToUser() {
+        var userId = $('#userList').val();
+        var roleType = $('#roleList').val();
+        $.ajax({
+            url: `/Home/AddRoleToUser1`,
+            type: 'Post',
+            data: {
+                userId,
+                roleType
+            },
+            success: function (resp) {
+                if (!resp.HasError) {
+                    alert(resp.message);
+                } else {
+                    alert(resp.message);
+
+                }
+                $("#id03 .close").click()
+            },
+            error: () => {
+                console.log("Error");
+            }
+        });
+    }
+    var modal = document.getElementById('id03');
+
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>

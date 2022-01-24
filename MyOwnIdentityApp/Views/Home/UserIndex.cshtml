@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<link rel="stylesheet" href="~/css/ModalForm.css" />
+<h1> Welcome To User Page!</h1>
+<div>
+    <p> User Session  :  @TempData["MessageUser"]</p>
+    <p> User Cookie   : @ViewBag.CookieUser</p>
+</div>
+
+<button class="btn-danger" onclick="Logout()" style="width:auto;"> Logout </button>
+<script>
+    function Logout() {
+        $.ajax({
+            url: "/Account/LogOut",
+            success: function (resp) {
+                if (!resp.hasError) {
+                    alert(resp.message);
+                     window.location.href = '@Url.Action("Login", "Account")';
+                } else {
+                    alert(resp.message);
+                }
+            }
+        });
+    }
+</script>
